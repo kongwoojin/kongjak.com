@@ -25,6 +25,10 @@ val projectList = listOf(
             TechStack(
                 "Kotlin",
                 Icons.KOTLIN
+            ),
+            TechStack(
+                "Jetpack Compose",
+                Icons.JETPACK_COMPOSE
             )
         )
     ),

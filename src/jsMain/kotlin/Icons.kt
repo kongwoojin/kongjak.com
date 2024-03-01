@@ -4,4 +4,5 @@ object Icons {
     const val PYTHON = "devicon-python-plain"
     const val C = "devicon-c-plain"
     const val JAVA = "devicon-java-plain"
+    const val JETPACK_COMPOSE = "devicon-jetpackcompose-line"
 }
