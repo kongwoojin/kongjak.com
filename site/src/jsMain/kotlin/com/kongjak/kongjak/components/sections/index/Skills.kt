@@ -28,7 +28,7 @@ import org.jetbrains.compose.web.dom.Text
 @Composable
 fun IndexSkills() {
     SimpleGrid(
-        modifier = Modifier.fillMaxSize().minWidth(100.percent).minHeight(100.vh).id("skills"),
+        modifier = Modifier.minWidth(100.percent).minHeight(100.vh).id("skills"),
         numColumns = numColumns(1, md = 2, lg = 3),
     ) {
         SkillWidget(

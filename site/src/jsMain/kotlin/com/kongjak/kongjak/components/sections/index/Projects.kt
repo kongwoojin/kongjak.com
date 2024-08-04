@@ -49,7 +49,7 @@ val ProjectItemStyle = CssStyle {
 @Composable
 fun IndexProjects() {
     Column(
-        modifier = Modifier.fillMaxSize().minWidth(100.percent).minHeight(100.vh).id("projects"),
+        modifier = Modifier.minWidth(100.percent).minHeight(100.vh).id("projects"),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {

@@ -33,7 +33,7 @@ import org.jetbrains.compose.web.dom.Text
 @Composable
 fun IndexMain() {
     Column(
-        modifier = Modifier.fillMaxSize().minWidth(100.percent).minHeight(100.vh).id("main"),
+        modifier = Modifier.minWidth(100.percent).minHeight(100.vh).id("main"),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
