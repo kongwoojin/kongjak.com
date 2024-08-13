@@ -6,6 +6,8 @@ import com.kongjak.kongjak.models.Skill
 import com.kongjak.kongjak.utils.languages
 import com.kongjak.kongjak.utils.platformsAndFrameworks
 import com.kongjak.kongjak.utils.tools
+import com.varabyte.kobweb.compose.css.TextAlign
+import com.varabyte.kobweb.compose.css.TextAlign.Companion
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
@@ -16,14 +18,21 @@ import com.varabyte.kobweb.compose.ui.modifiers.id
 import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.minHeight
 import com.varabyte.kobweb.compose.ui.modifiers.minWidth
+import com.varabyte.kobweb.compose.ui.modifiers.textAlign
 import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.layout.SimpleGrid
 import com.varabyte.kobweb.silk.components.layout.numColumns
+import com.varabyte.kobweb.silk.style.CssStyle
+import com.varabyte.kobweb.silk.style.toAttrs
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.css.vh
 import org.jetbrains.compose.web.dom.H2
 import org.jetbrains.compose.web.dom.Text
+
+val SkillTitleStyle = CssStyle {
+    base { Modifier.textAlign(TextAlign.Center)}
+}
 
 @Composable
 fun IndexSkills() {
@@ -58,7 +67,7 @@ fun SkillWidget(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        H2 {
+        H2(attrs = SkillTitleStyle.toAttrs()) {
             Text(title)
         }
 
