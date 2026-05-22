@@ -7,7 +7,7 @@ import dev.kongjak.kongjak.components.sections.index.IndexContributions
 import dev.kongjak.kongjak.components.sections.index.IndexMain
 import dev.kongjak.kongjak.components.sections.index.IndexProjects
 import dev.kongjak.kongjak.components.sections.index.IndexSkills
-import dev.kongjak.kongjak.components.sections.index.IndexWriting
+// import dev.kongjak.kongjak.components.sections.index.IndexWriting
 import com.varabyte.kobweb.core.Page
 import com.varabyte.kobweb.core.data.add
 import com.varabyte.kobweb.core.init.InitRoute
@@ -27,6 +27,6 @@ fun HomePage() {
     IndexSkills()
     IndexProjects()
     IndexContributions()
-    IndexWriting()
+    // IndexWriting()
     IndexContact()
 }

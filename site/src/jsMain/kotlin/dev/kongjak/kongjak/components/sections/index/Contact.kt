@@ -12,7 +12,7 @@ import org.jetbrains.compose.web.dom.Text
 @Composable
 fun IndexContact() {
     Section(attrs = { id("contact") }) {
-        SectionHead("05", "contact")
+        SectionHead("04", "contact")
 
         Div(attrs = { classes("contact-block", "reveal") }) {
             Div(attrs = { classes("contact-tabbar") }) {
