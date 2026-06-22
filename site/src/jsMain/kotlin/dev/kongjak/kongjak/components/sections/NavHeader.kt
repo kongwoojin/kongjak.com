@@ -67,7 +67,7 @@ private fun HomeNav() {
         HashLink("#skills", "skills")
         HashLink("#projects", "projects")
         HashLink("#contributions", "contributions")
-        HashLink("#writing", "writing")
+        // HashLink("#writing", "writing")
         HashLink("#contact", "contact")
     }
 }
